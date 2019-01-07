@@ -1,0 +1,113 @@
+.dashboard {
+    padding: 20px;
+    margin-top: 0px;
+
+    .cards {
+        .card {
+            text-align: center;
+            padding: 10px;
+            color: white;
+            border-radius: 3px;
+            margin-bottom: 20px;
+            font-weight: 300;
+            cursor: pointer;
+            background-color: $brand-grey;
+
+            h3 { font-size: 1.4em }
+            h4 { font-size: 1.2em }
+            h5 {
+                font-size: 15px;
+                font-weight: bold;
+                width: 100%;
+                @include ellipsis;
+            }
+
+            i {
+                font-size: 45px;
+            }
+
+            &.orange { background-color: #f80 }
+            &.blue { background-color: #3080ff }
+            &.green { background-color: $brand-success }
+            &.dark { background-color: $brand-font }
+            &.black { background-color: $brand-dark }
+            &.red { background-color: $brand-danger }
+            &.purple { background-color: $brand-purple }
+            &.wise { background-color: $brand-wise }
+
+            &.grey {
+                background-color: #edf1f7;
+                color: $brand-font;
+            }
+
+            .desc {
+                margin-top:5px;
+                font-size: 12px;
+                width: 100%;
+                @include ellipsis;
+            }
+
+        }
+    }
+
+
+
+    .table {
+        > thead {
+            > tr {
+                > th {
+                    border-bottom: 1px solid #e8ecf3;
+                    line-height: 1.5;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: $titleColour;
+                    font-family: Averta, 'Museo Slab', 'Museo Sans';
+                }
+            }
+        }
+
+        > tbody {
+            > tr {
+                cursor: pointer;
+
+                > td {
+                    font-weight: 300;
+                    font-size: 14px;
+                    @include ellipsis;
+                }
+            }
+        }
+    }
+}
+
+
+._company {
+    ._company-logo {
+        img {
+            width: 100%;
+            max-width: 200px;
+        }
+    }
+}
+
+.locations-select {
+    .table {
+        tr {
+            cursor: pointer;
+
+            td {
+                padding: 5px 10px;
+                @include ellipsis;
+            }
+
+            .name {
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            .address {
+                font-size: 13px;
+            }
+        }
+    }
+}
